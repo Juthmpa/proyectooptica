@@ -1,0 +1,28 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="proyectooptica">
+    <output-path>$PROJECT_DIR$/out/artifacts/proyectooptica</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="proyectooptica" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.itextpdf:layout:7.2.5" />
+          <element id="library" level="project" name="Maven: com.itextpdf:kernel:7.2.5" />
+          <element id="library" level="project" name="Maven: org.bouncycastle:bcpkix-jdk15on:1.70" />
+          <element id="library" level="project" name="Maven: org.bouncycastle:bcutil-jdk15on:1.70" />
+          <element id="library" level="project" name="Maven: org.bouncycastle:bcprov-jdk15on:1.70" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.36" />
+          <element id="library" level="project" name="Maven: com.itextpdf:io:7.2.5" />
+          <element id="library" level="project" name="Maven: com.itextpdf:commons:7.2.5" />
+          <element id="library" level="project" name="Maven: com.mysql:mysql-connector-j:9.5.0" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:4.31.1" />
+          <element id="library" level="project" name="Maven: jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:3.0.0" />
+          <element id="library" level="project" name="Maven: jakarta.el:jakarta.el-api:5.0.0" />
+          <element id="library" level="project" name="Maven: org.glassfish.web:jakarta.servlet.jsp.jstl:3.0.1" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="proyectooptica/web/Web" />
+    </root>
+  </artifact>
+</component>

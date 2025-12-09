@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="proyectooptica">
+    <output-path>$PROJECT_DIR$/out/artifacts/proyectooptica</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="proyectooptica" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.10.1" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="proyectooptica/web/Web" />
+    </root>
+  </artifact>
+</component>

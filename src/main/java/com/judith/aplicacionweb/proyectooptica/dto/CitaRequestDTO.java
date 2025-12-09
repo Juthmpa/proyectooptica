@@ -1,21 +1,15 @@
-package com.judith.aplicacionweb.proyectooptica.model;
+package com.judith.aplicacionweb.proyectooptica.dto;
 
+import com.judith.aplicacionweb.proyectooptica.model.Cita;
 import java.time.LocalDateTime;
 
-public class Cita {
+public class CitaRequestDTO {
     private Long idCita;
-    private Long idCliente;          // FK a clientes
-    private Long idOptometrista;     // FK a optometristas
+    private Long idCliente;
+    private Long idOptometrista;
     private LocalDateTime fechaHora;
     private String motivo;
-    private Long idEstado;           // FK a estado_cita
-    private LocalDateTime fechaCreacion;
-
-    // Constructores
-    public Cita() {
-        this.fechaCreacion = LocalDateTime.now();
-        this.idEstado = EstadoCita.ID_PROGRAMADA;
-    }
+    private Long idEstado;
 
     // Getters y Setters
     public Long getIdCita() { return idCita; }
@@ -30,6 +24,18 @@ public class Cita {
     public void setMotivo(String motivo) { this.motivo = motivo; }
     public Long getIdEstado() { return idEstado; }
     public void setIdEstado(Long idEstado) { this.idEstado = idEstado; }
-    public LocalDateTime getFechaCreacion() { return fechaCreacion; }
-    public void setFechaCreacion(LocalDateTime fechaCreacion) { this.fechaCreacion = fechaCreacion; }
+
+    // Método de conversión a Entidad
+    public Cita toEntity() {
+        Cita cita = new Cita();
+        cita.setIdCita(this.idCita);
+        cita.setIdCliente(this.idCliente);
+        cita.setIdOptometrista(this.idOptometrista);
+        cita.setFechaHora(this.fechaHora);
+        cita.setMotivo(this.motivo);
+        if (this.idEstado != null) {
+            cita.setIdEstado(this.idEstado);
+        }
+        return cita;
+    }
 }

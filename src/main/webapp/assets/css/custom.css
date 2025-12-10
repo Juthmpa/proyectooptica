@@ -1,0 +1,34 @@
+/* Sobrescribe las variables de color de Bootstrap */
+:root {
+    /* Colores Principales */
+    --bs-primary: #44B4EB; /* Azul Principal */
+    --bs-success: #14A47C; /* Verde Oscuro para acciones de éxito */
+
+    /* Colores Secundarios/Base (puedes mapearlos a info o secondary) */
+    --bs-info: #30A09C; /* Verde Claro para información o alerts */
+    --bs-secondary: #188C7C; /* Verde Secundario para elementos neutros */
+
+    /* Color de texto en botones de contraste */
+    --bs-btn-color: #ffffff;
+}
+
+/* Estilos de fondo para el navbar/header usando el color primario */
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+/* Estilos de botones usando la paleta */
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-success {
+    background-color: var(--bs-success);
+    border-color: var(--bs-success);
+}
+
+/* Fondo para el cuerpo de la página (opcional) */
+body {
+    background-color: #f8f9fa; /* Gris muy claro para el fondo */
+}
